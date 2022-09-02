@@ -6,10 +6,13 @@ using namespace std;
 
 int main(void){
 
-  Capybara Steve;
-  Steve.capyName = "Steve";
-  Steve.capyAge = 10;
-  cout << Steve.capyName << Steve.capyAge;
+  Capybara capy;
+  
+  capy.setName("Steve");
+  capy.setAge(10);
+  string name = capy.getName();
+  int age = capy.getAge();
+  cout << name << age;
   
   return 0;
 }

@@ -10,12 +10,16 @@
 
 #include <stdio.h>
 #include <string>
-using namespace std;
-
-#endif /* Capybara_hpp */
 
 class Capybara{
+private:
+  std::string name;
+  int age;
+  
 public:
-  string capyName;
-  int capyAge;
+  void setName(std::string capyName);
+  std::string getName();
+  void setAge(int capyAge);
+  int getAge();
 };
+#endif /* Capybara_hpp */

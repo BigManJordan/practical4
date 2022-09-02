@@ -10,12 +10,30 @@
 #include <string>
 using namespace std;
 
-int main(void){
-
-  Capybara Steve;
-  Steve.capyName = "Steve";
-  Steve.capyAge = 10;
-  cout << Steve.capyName << Steve.capyAge;
-  
-  return 0;
+void Capybara::setName(string capyName){
+  name = capyName;
 }
+
+string Capybara::getName(){
+  return name;
+}
+
+void Capybara::setAge(int capyAge){
+  age = capyAge;
+}
+
+int Capybara::getAge(){
+  return age;
+}
+
+
+
+//int main(void){
+//
+//  Capybara Steve;
+//  Steve.setName = "capy";
+//  Steve.setAge = 10;
+//  cout << Steve.getName() << Steve.getAge();
+//
+//  return 0;
+//}
