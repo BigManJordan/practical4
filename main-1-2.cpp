@@ -6,10 +6,8 @@ using namespace std;
 
 int main(void){
   
-  Person person;
+  Person person(100, "Jon");
   
-  person.setName("Jon");
-  person.setSalary(100);
   string name = person.getName();
   int salary = person.getSalary();
   cout << name << salary;

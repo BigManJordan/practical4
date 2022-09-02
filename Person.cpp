@@ -10,6 +10,11 @@
 #include <string>
 using namespace std;
 
+Person::67886Person(int mySalary, std::string myName){
+  name = myName;
+  salary = mySalary;
+}
+
 void Person::setName(string myName){
   name = myName;
 }
